@@ -1,3 +1,19 @@
 spring:
   application:
     name: ingestor
+  kafka:
+    bootstrap-servers: localhost:9092
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      properties:
+        spring.json.add.type.headers: true
+    admin:
+      auto-create: true
+  threads:
+    virtual:
+      enabled: true
+
+finnhub:
+  api.key: ${FINNHUB_KEY}
+  api.url: wss://ws.finnhub.io
