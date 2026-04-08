@@ -1,0 +1,5 @@
+rootProject.name = 'live-stock-data'
+include 'core'
+include 'alerts'
+include 'analytics'
+include 'ingestor'
