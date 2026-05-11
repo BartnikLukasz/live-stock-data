@@ -8,7 +8,7 @@ import org.apache.kafka.streams.KeyValue;
 import org.apache.kafka.streams.StreamsBuilder;
 import org.apache.kafka.streams.kstream.*;
 import org.apache.kafka.streams.state.WindowStore;
-import org.bartnik.analytics.model.TradeAggregate;
+import model.TradeAggregate;
 import org.bartnik.analytics.util.TradeSerdes;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -27,7 +27,7 @@ public class AnalyticsStreamsConfig {
 
         KStream<String, TradeAggregate> analyticsStream = builder.stream("ticker-raw", Consumed.with(Serdes.String(), tradeSerde))
                 .groupByKey()
-                .windowedBy(TimeWindows.ofSizeWithNoGrace(Duration.ofMinutes(1)))
+                .windowedBy(TimeWindows.ofSizeWithNoGrace(Duration.ofSeconds(10)))
                 .aggregate(
                         () -> new TradeAggregate("PENDING"),
                         (key, trade, agg) -> agg.add(trade),

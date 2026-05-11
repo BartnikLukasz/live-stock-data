@@ -1,0 +1,15 @@
+<div class="card">
+  <h2>{{ symbol() }}</h2>
+  <div class="price-grid">
+    <div class="stat">
+      <label>VWAP</label>
+      <span class="value">{{ vwap() }}</span>
+    </div>
+    <div class="stat">
+      <label>Volume</label>
+      <span class="value">{{ volume() }}</span>
+    </div>
+  </div>
+  <p>Trade Count: {{ count() }}</p>
+  <app-vwap-chart></app-vwap-chart>
+</div>

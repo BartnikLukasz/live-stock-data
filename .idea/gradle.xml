@@ -1,47 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="GradleMigrationSettings" migrationVersion="1" />
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="modules">
-          <set>
-            <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/alerts" />
-            <option value="$PROJECT_DIR$/analytics" />
-            <option value="$PROJECT_DIR$/core" />
-            <option value="$PROJECT_DIR$/ingestor" />
-          </set>
-        </option>
-        <option name="myGradleHome" value="" />
-      </GradleProjectSettings>
-      <GradleProjectSettings>
-        <option name="externalProjectPath" value="$PROJECT_DIR$/alerts" />
-        <option name="modules">
-          <set>
-            <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/alerts" />
-            <option value="$PROJECT_DIR$/analytics" />
-            <option value="$PROJECT_DIR$/core" />
-            <option value="$PROJECT_DIR$/ingestor" />
-          </set>
-        </option>
-      </GradleProjectSettings>
-      <GradleProjectSettings>
-        <option name="externalProjectPath" value="$PROJECT_DIR$/analytics" />
-        <option name="modules">
-          <set>
-            <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/alerts" />
-            <option value="$PROJECT_DIR$/analytics" />
-            <option value="$PROJECT_DIR$/core" />
-            <option value="$PROJECT_DIR$/ingestor" />
-          </set>
-        </option>
-      </GradleProjectSettings>
-      <GradleProjectSettings>
-        <option name="externalProjectPath" value="$PROJECT_DIR$/ingestor" />
+        <option name="gradleJvm" value="#JAVA_HOME" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />

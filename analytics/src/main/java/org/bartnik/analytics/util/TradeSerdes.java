@@ -3,7 +3,7 @@ package org.bartnik.analytics.util;
 import model.StockTrade;
 import org.apache.kafka.common.serialization.Serde;
 import org.apache.kafka.common.serialization.Serdes;
-import org.bartnik.analytics.model.TradeAggregate;
+import model.TradeAggregate;
 import util.Jackson3Deserializer;
 import util.Jackson3Serializer;
 

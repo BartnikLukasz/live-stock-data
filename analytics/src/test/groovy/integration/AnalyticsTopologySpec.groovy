@@ -7,7 +7,7 @@ import org.apache.kafka.streams.TopologyTestDriver
 import org.apache.kafka.streams.TestInputTopic
 import org.apache.kafka.streams.TestOutputTopic
 import org.bartnik.analytics.config.AnalyticsStreamsConfig
-import org.bartnik.analytics.model.TradeAggregate
+import model.TradeAggregate
 import org.bartnik.analytics.util.TradeSerdes
 import spock.lang.Specification
 

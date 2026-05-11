@@ -1,5 +1,5 @@
 import model.StockTrade
-import org.bartnik.analytics.model.TradeAggregate
+import model.TradeAggregate
 import spock.lang.Specification
 import spock.lang.Unroll
 

@@ -7,3 +7,7 @@ spring:
       write-bigdecimal-as-plain: true
     deserialization:
       use-big-decimal-for-floats: true
+  kafka:
+    streams:
+      properties:
+        commit.interval.ms: 1000
