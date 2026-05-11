@@ -53,7 +53,7 @@ public class FinnhubClient extends TextWebSocketHandler {
     }
 
     @Override
-    protected void handleTextMessage(WebSocketSession session, TextMessage message) {
+    public void handleTextMessage(WebSocketSession session, TextMessage message) {
         try {
             String payload = message.getPayload();
             log.info("Received: {}", payload);

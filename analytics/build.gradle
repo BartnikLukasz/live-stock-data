@@ -2,6 +2,7 @@ plugins {
     id 'java'
     id 'org.springframework.boot' version '4.0.5'
     id 'io.spring.dependency-management' version '1.1.7'
+    id 'groovy'
 }
 
 group = 'org.bartnik'
@@ -24,10 +25,20 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-actuator'
     implementation 'org.springframework.boot:spring-boot-starter-kafka'
     implementation 'org.apache.kafka:kafka-streams'
+    implementation 'tools.jackson.core:jackson-core:3.1.2'
+    implementation 'tools.jackson.core:jackson-databind:3.1.2'
+
     runtimeOnly 'io.micrometer:micrometer-registry-prometheus'
     testImplementation 'org.springframework.boot:spring-boot-starter-actuator-test'
     testImplementation 'org.springframework.boot:spring-boot-starter-kafka-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+    testImplementation 'org.apache.kafka:kafka-streams'
+    testImplementation 'org.apache.groovy:groovy:5.0.5'
+    testImplementation 'org.spockframework:spock-core:2.4-groovy-5.0'
+    testImplementation "org.spockframework:spock-core"
+    testImplementation "org.spockframework:spock-spring"
+
+    implementation 'net.bytebuddy:byte-buddy:1.18.8'
 }
 
 tasks.named('bootBuildImage') {

@@ -8,7 +8,7 @@ public record StockTrade(
         @JsonProperty("s") String symbol,
         @JsonProperty("p") BigDecimal price,
         @JsonProperty("t") Long timestamp,
-        @JsonProperty("v") Double volume,
+        @JsonProperty("v") BigDecimal volume,
         @JsonProperty("c") String[] conditions
 ) {
 }

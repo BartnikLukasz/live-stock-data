@@ -1,3 +1,9 @@
 spring:
+  port: 8070
   application:
     name: analytics
+  jackson:
+    serialization:
+      write-bigdecimal-as-plain: true
+    deserialization:
+      use-big-decimal-for-floats: true

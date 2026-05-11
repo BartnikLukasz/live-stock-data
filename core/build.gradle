@@ -5,13 +5,22 @@ plugins {
 group = 'org.bartnik'
 version = '1.0-SNAPSHOT'
 
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(25)
+    }
+}
+
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    implementation 'com.fasterxml.jackson.core:jackson-core:2.21.2'
-    implementation 'com.fasterxml.jackson.core:jackson-annotations:2.21'
+    implementation 'tools.jackson.core:jackson-core:3.1.2'
+    implementation 'com.fasterxml.jackson.core:jackson-annotations:3.0-rc5'
+    implementation 'tools.jackson.core:jackson-databind:3.1.2'
+
+    implementation 'org.apache.kafka:kafka-clients:4.2.0'
 
     testImplementation platform('org.junit:junit-bom:6.0.0')
     testImplementation 'org.junit.jupiter:junit-jupiter'
